@@ -78,8 +78,10 @@ const CarFilter = ({ onFilterChange }) => {
                 type="number"
                 value={minMileage}
                 onChange={e => {
-                  const value = Math.max(e.target.value, 1);
-                  setMinMileage(value);
+                  const value = e.target.value;
+                  if (value === '' || parseInt(value, 10) >= 1) {
+                    setMinMileage(value);
+                  }
                 }}
               />
             </InputDiv>
@@ -89,8 +91,10 @@ const CarFilter = ({ onFilterChange }) => {
                 type="number"
                 value={maxMileage}
                 onChange={e => {
-                  const value = Math.max(e.target.value, 1);
-                  setMaxMileage(value);
+                  const value = e.target.value;
+                  if (value === '' || parseInt(value, 10) >= 1) {
+                    setMaxMileage(value);
+                  }
                 }}
               />
             </InputDiv>
