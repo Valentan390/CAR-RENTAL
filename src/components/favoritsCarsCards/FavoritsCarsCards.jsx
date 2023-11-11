@@ -10,6 +10,7 @@ import iconAddFavorites from './../../imeges/addHeart.svg';
 import iconRemoveFavorites from './../../imeges/removeHeart.svg';
 import carPhotoFavorites from './../../imeges/2023ferrarisf90stradale.jpg';
 import Modal from 'components/modal/Modal';
+import { fetchCarById } from 'redux/carsData/cardataThunk';
 
 const FavoritsCarsCards = () => {
   const favoritsCars = useSelector(selectFavorite);
@@ -22,6 +23,7 @@ const FavoritsCarsCards = () => {
   };
 
   const handeleLearnMore = carId => {
+    dispatch(fetchCarById(carId));
     onModal();
   };
 
