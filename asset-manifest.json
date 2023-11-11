@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/CAR-RENTAL/static/css/main.cad7d745.css",
+    "main.js": "/CAR-RENTAL/static/js/main.ee23d62b.js",
+    "static/media/15591270.jpg": "/CAR-RENTAL/static/media/15591270.d53e3b668ade0ca9508e.jpg",
+    "static/media/2023ferrarisf90stradale.jpg": "/CAR-RENTAL/static/media/2023ferrarisf90stradale.253707a11c12fa9c8f88.jpg",
+    "static/media/2023-ferrari-roma.jpg": "/CAR-RENTAL/static/media/2023-ferrari-roma.34202a8af41f779202f5.jpg",
+    "static/media/2020errarif8spyder1031593551679.jpg": "/CAR-RENTAL/static/media/2020errarif8spyder1031593551679.eb2761120e5d48791a1e.jpg",
+    "index.html": "/CAR-RENTAL/index.html",
+    "static/media/removeHeart.svg": "/CAR-RENTAL/static/media/removeHeart.e6aef420dab2877eaa3255f37619c5e3.svg",
+    "static/media/addHeart.svg": "/CAR-RENTAL/static/media/addHeart.623a3b874365d724c658e79a860ad4a4.svg",
+    "static/media/close.svg": "/CAR-RENTAL/static/media/close.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
+    "main.cad7d745.css.map": "/CAR-RENTAL/static/css/main.cad7d745.css.map",
+    "main.ee23d62b.js.map": "/CAR-RENTAL/static/js/main.ee23d62b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cad7d745.css",
+    "static/js/main.ee23d62b.js"
+  ]
+}
