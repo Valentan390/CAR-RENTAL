@@ -1,0 +1,107 @@
+.filterForm {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 50px 0;
+}
+.select_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.select_wrapper div {
+  display: flex;
+}
+.select_wrapper select {
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  background: #f7f7fb;
+  display: flex;
+  padding: 14px 89px 14px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  color: #121417;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+.label_title {
+  color: var(--pr-text-color);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+}
+.input_wrapper {
+  position: relative;
+}
+.InputPl {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  color: #121417;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+.left_input {
+  border: none;
+  outline: none;
+  width: 160px;
+  height: 54px;
+  padding: 14px 24px 14px 62px;
+  border-radius: 14px 0px 0px 14px;
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
+  background: #f7f7fb;
+  color: #121417;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+.rigth_input {
+  border: none;
+  outline: none;
+  width: 160px;
+  height: 54px;
+  padding: 14px 24px 14px 38px;
+  border-radius: 0px 14px 14px 0px;
+  background: #f7f7fb;
+  color: #121417;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+.btn_Search {
+  border-radius: 12px;
+  background: var(--pr-button-background-color);
+  padding: 14px 44px;
+  height: 52px;
+  color: var(--White, #fff);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+}
+.btn_Search:hover,
+.btn_Search:focus,
+.closeBtn:hover,
+.closeBtn:focus {
+  background: var(--hovered-button-background-color);
+}
+.closeBtn {
+  border-radius: 12px;
+  background: var(--pr-button-background-color);
+  padding: 14px 44px;
+  height: 52px;
+  color: var(--White, #fff);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+}

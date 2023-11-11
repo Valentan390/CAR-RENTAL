@@ -1,0 +1,152 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.Modal {
+  width: 430px;
+  /* height: 216px; */
+  border: 2px solid;
+  /* background-clip: initial; */
+  background-color: bisque;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+.modalContainer {
+  position: relative;
+  width: 541px;
+  /* height: 752px; */
+  border-radius: 24px;
+  background: #fff;
+  padding: 40px;
+}
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+}
+.wrapperCar {
+  border-radius: 14px;
+  background: rgba(18, 20, 23, 0.1);
+  width: 461px;
+  height: 248px;
+  margin-bottom: 14px;
+}
+.carImage {
+  border-radius: 14px;
+  width: 461px;
+  height: 248px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.carTitle {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.carTitle h2 {
+  color: #121417;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  /* text-wrap: nowrap; */
+}
+.carTitle span {
+  color: var(--pr-button-background-color);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.carInfo {
+  color: rgba(18, 20, 23, 0.5);
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.carDescription {
+  color: #121417;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+.secondaryTitle {
+  color: var(--pr-text-color);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 8px;
+}
+.AccessoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: rgba(18, 20, 23, 0.5);
+  font-family: inherit;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.conditionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+.conditionList li {
+  padding: 7px 14px;
+  border-radius: 35px;
+  background: #f9f9f9;
+  color: #363535;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.btnRentalCar {
+  padding: 12px 50px;
+  border-radius: 12px;
+  background: var(--pr-button-background-color);
+  color: var(--White, #fff);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  display: inline-block;
+  margin-top: 24px;
+  margin-top: auto;
+}
+.btnRentalCard:hover,
+.btnRentalCard:focus {
+  background: var(--hovered-button-background-color);
+}

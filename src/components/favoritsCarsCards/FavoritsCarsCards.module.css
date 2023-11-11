@@ -1,0 +1,123 @@
+.cardLi {
+  display: flex;
+  flex-direction: column;
+  width: 274px;
+  height: 426px;
+}
+.cardWrapper {
+  position: relative;
+  border-radius: 12px;
+  /* background: rgba(18, 20, 23, 0.1); */
+  /* background-image: linear-gradient(
+      rgba(18, 20, 23, 0.2),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(${bgImg}); */
+  background-size: cover;
+  background-position-x: 45%;
+  width: 274px;
+  height: 268px;
+  margin-bottom: 14px;
+}
+.btnAddFavorite {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+}
+.carImg {
+  border-radius: 12px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 274px;
+  height: 268px;
+}
+.carTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.carTitle h2 {
+  color: var(--pr-text-color);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  /* text-wrap: nowrap; */
+}
+.carTitle span {
+  color: var(--pr-button-background-color);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.carTitle p {
+  color: var(--pr-text-color);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.carInfo {
+  color: rgba(18, 20, 23, 0.5);
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.btnLearnMore {
+  border-radius: 12px;
+  background: var(--pr-button-background-color);
+  padding: 10px 90px;
+  justify-content: center;
+  align-items: center;
+  color: var(--pr-input-background-color);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  margin-top: 28px;
+  margin-top: auto;
+}
+.btnLearnMore:hover,
+.btnLearnMore:focus {
+  background: var(--hovered-button-background-color);
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 2px;
+  background-color: var(--pr-button-background-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  width: 180px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--hovered-button-background-color);
+}
+.advertsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 29px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  margin: 50px 0 100px;
+}
