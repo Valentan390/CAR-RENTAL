@@ -1,13 +1,13 @@
 import React from 'react';
 import Select from 'react-select';
-import makes from '../../makes/makes.json';
+import brands from '../../CarBrands/carbrands.json';
 
 const SelectBrand = ({ selectedMake, setSelectedMake }) => {
   const options = [
-    { value: null, label: 'Enter the text' },
-    ...makes.map((make, index) => ({
-      value: make,
-      label: make,
+    { value: '', label: 'Enter the text' },
+    ...brands.map(brand => ({
+      value: brand,
+      label: brand,
     })),
   ];
 

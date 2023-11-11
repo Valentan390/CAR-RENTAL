@@ -2,6 +2,7 @@ import CarFilter from 'components/carFilter/CarFilter';
 import CarsCards from 'components/carscards/CarsCards';
 import React from 'react';
 import { useDispatch } from 'react-redux';
+
 import { setFilters } from 'redux/filters/filtersSlice';
 
 const Catalog = () => {

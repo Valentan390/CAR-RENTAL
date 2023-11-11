@@ -16,6 +16,22 @@ export const fetchFirstPage = createAsyncThunk(
     }
   }
 );
+// export const fetchFirstPage = createAsyncThunk(
+//   'cardata/fetchFirst',
+//   async (page, thunkAPI) => {
+//     try {
+//       const response = await axios.get('/cardata', {
+//         params: {
+//           page: page,
+//           limit: 12,
+//         },
+//       });
+//       return response.data;
+//     } catch (e) {
+//       return thunkAPI.rejectWithValue(e.message);
+//     }
+//   }
+// );
 export const fetchCars = createAsyncThunk(
   'cardata/fetchAll',
   async (page, thunkAPI) => {
@@ -51,15 +67,3 @@ export const fetchAllCars = createAsyncThunk(
     }
   }
 );
-
-// export const fetchCarsdata = createAsyncThunk(
-//   'carddata/fetchAll',
-//   async (page, thunkAPI) => {
-//     try {
-//       const response = await getCarDataService(page);
-//       return response.data;
-//     } catch (error) {
-//       return thunkAPI.rejectWithValue(error.response.data);
-//     }
-//   }
-// );

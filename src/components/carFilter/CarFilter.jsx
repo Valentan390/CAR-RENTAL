@@ -30,7 +30,6 @@ const CarFilter = ({ onFilterChange }) => {
     filters.minMileage,
     filters.selectedMake,
     filters.selectedPrice,
-    filters.setMaxMileage,
   ]);
 
   const handleFormSubmit = event => {
@@ -48,9 +47,9 @@ const CarFilter = ({ onFilterChange }) => {
 
   const clearFilters = e => {
     e.preventDefault();
-    console.log('clear');
     dispatch(resetFilters());
   };
+
   return (
     <div>
       <form onSubmit={handleFormSubmit} className={styles.filterForm}>

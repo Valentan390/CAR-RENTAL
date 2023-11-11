@@ -1,13 +1,11 @@
 import React from 'react';
 import Select from 'react-select';
 
-const options = [
-  { value: '', label: 'To $' },
-  ...[...Array(21).keys()].map(price => ({
-    value: (price + 1) * 10,
-    label: `$${(price + 1) * 10}`,
-  })),
-];
+const options = [{ value: '', label: 'To $' }];
+
+for (let price = 10; price <= 200; price += 10) {
+  options.push({ value: price, label: `${price}$` });
+}
 
 const SelectPrice = ({ selectedPrice, setSelectedPrice }) => {
   const handleChange = selectedOption => {

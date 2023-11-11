@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Home from 'pages/Home';
 import Catalog from 'pages/Catalog';
@@ -12,6 +12,7 @@ export const App = () => {
         <Route path="catalog" element={<Catalog />} />
         <Route path="favourites" element={<Favourites />} />
       </Route>
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };

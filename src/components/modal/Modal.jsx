@@ -126,14 +126,9 @@ const Modal = ({ onClose, shownModal }) => {
                   </span>
                 </li>
               </ul>
-              <button
-                className={styles.btnRentalCar}
-                onClick={() => {
-                  alert('Phone number: +380730000000');
-                }}
-              >
+              <a className={styles.btnRentalCar} href="tel:+380730000000">
                 Rental car
-              </button>
+              </a>
             </div>
           );
         })}
