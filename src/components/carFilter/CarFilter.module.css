@@ -105,3 +105,16 @@
   font-weight: 600;
   line-height: 1.43;
 }
+
+.disabledBtn {
+  border-radius: 12px;
+  background-color: grey;
+  cursor: not-allowed;
+  padding: 14px 44px;
+  height: 52px;
+  color: var(--White, #fff);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+}

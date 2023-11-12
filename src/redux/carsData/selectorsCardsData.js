@@ -30,22 +30,3 @@ export const getFilterContacts = createSelector(
     });
   }
 );
-
-// const filteredAdverts = allCars.filter(adverts => {
-//   if (filters.selectedMake && adverts.make !== filters.selectedMake) {
-//     return false;
-//   }
-//   if (
-//     filters.selectedPrice &&
-//     parseInt(adverts.rentalPrice.slice(1), 10) > Number(filters.selectedPrice)
-//   ) {
-//     return false;
-//   }
-//   if (filters.minMileage && adverts.mileage < Number(filters.minMileage)) {
-//     return false;
-//   }
-//   if (filters.maxMileage && adverts.mileage > Number(filters.maxMileage)) {
-//     return false;
-//   }
-//   return true;
-// });

@@ -1,54 +1,57 @@
-import SelectBrand from 'components/select/SelectBrand';
-import styles from './CarFilter.module.css';
+import styles from '../carFilter/CarFilter.module.css';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectFilters } from 'redux/filters/selectorsFilters';
+import { selectFiltersFavorite } from 'redux/filters/selectorsFilters';
 import SelectPrice from 'components/select/SelectPrice';
-import { resetFilters } from 'redux/filters/filtersSlice';
+import {
+  resetFiltersFavorite,
+  setFiltersFavorite,
+} from 'redux/filters/filtersSlice';
 import {
   InputDiv,
   InputPl,
   InputLeft,
   InputRight,
 } from '../carFilter/CarFilter.styled';
+import SelectBrandFavorits from 'components/select/SelectBrandFavorits';
 
-const CarFilter = ({ onFilterChange }) => {
+const CarFilterFavorits = () => {
   const [selectedMake, setSelectedMake] = useState('');
   const [selectedPrice, setSelectedPrice] = useState('');
   const [minMileage, setMinMileage] = useState('');
   const [maxMileage, setMaxMileage] = useState('');
 
   const dispatch = useDispatch();
-  const filters = useSelector(selectFilters);
+  const filtersFavorite = useSelector(selectFiltersFavorite);
 
   useEffect(() => {
-    setSelectedMake(filters.selectedMake);
-    setSelectedPrice(filters.selectedPrice);
-    setMinMileage(filters.minMileage);
-    setMaxMileage(filters.maxMileage);
+    setSelectedMake(filtersFavorite.selectedMake);
+    setSelectedPrice(filtersFavorite.selectedPrice);
+    setMinMileage(filtersFavorite.minMileage);
+    setMaxMileage(filtersFavorite.maxMileage);
   }, [
-    filters.maxMileage,
-    filters.minMileage,
-    filters.selectedMake,
-    filters.selectedPrice,
+    filtersFavorite.maxMileage,
+    filtersFavorite.minMileage,
+    filtersFavorite.selectedMake,
+    filtersFavorite.selectedPrice,
   ]);
 
   const handleFormSubmit = event => {
     event.preventDefault();
 
-    const filters = {
+    const filtersFavorite = {
       selectedMake,
       selectedPrice,
       minMileage,
       maxMileage,
     };
 
-    onFilterChange(filters);
+    dispatch(setFiltersFavorite(filtersFavorite));
   };
 
   const clearFilters = e => {
     e.preventDefault();
-    dispatch(resetFilters());
+    dispatch(resetFiltersFavorite());
   };
 
   const isAnyFieldFilled =
@@ -59,10 +62,9 @@ const CarFilter = ({ onFilterChange }) => {
       <form onSubmit={handleFormSubmit} className={styles.filterForm}>
         <div className={styles.select_wrapper}>
           <label className={styles.label_title}>Car brand</label>
-          <SelectBrand
+          <SelectBrandFavorits
             selectedMake={selectedMake}
             setSelectedMake={setSelectedMake}
-            // makes={makes}
           />
         </div>
         <div className={styles.select_wrapper}>
@@ -128,4 +130,4 @@ const CarFilter = ({ onFilterChange }) => {
   );
 };
 
-export default CarFilter;
+export default CarFilterFavorits;

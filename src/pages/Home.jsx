@@ -1,11 +1,11 @@
 import React from 'react';
-import HomeFoto from '../imeges/15591270.jpg';
+import AnimationForHome from 'components/animationForHome/AnimationForHome';
+import styles from './Home.module.css';
 
 const Home = () => {
   return (
-    <div>
-      Home
-      <img src={HomeFoto} alt="" width={700} />
+    <div className={styles.backgroundImg}>
+      <AnimationForHome />
     </div>
   );
 };

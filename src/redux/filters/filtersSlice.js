@@ -9,6 +9,12 @@ const filtersSlice = createSlice({
       minMileage: '',
       maxMileage: '',
     },
+    filtersFavorite: {
+      selectedMake: '',
+      selectedPrice: '',
+      minMileage: '',
+      maxMileage: '',
+    },
   },
   reducers: {
     setFilters: (state, action) => {
@@ -23,9 +29,27 @@ const filtersSlice = createSlice({
       state.filters.minMileage = '';
       state.filters.maxMileage = '';
     },
+
+    setFiltersFavorite: (state, action) => {
+      state.filtersFavorite = {
+        ...state.filtersFavorite,
+        ...action.payload,
+      };
+    },
+    resetFiltersFavorite: state => {
+      state.filtersFavorite.selectedMake = '';
+      state.filtersFavorite.selectedPrice = '';
+      state.filtersFavorite.minMileage = '';
+      state.filtersFavorite.maxMileage = '';
+    },
   },
 });
 
-export const { setFilters, resetFilters } = filtersSlice.actions;
+export const {
+  setFilters,
+  resetFilters,
+  setFiltersFavorite,
+  resetFiltersFavorite,
+} = filtersSlice.actions;
 
 export default filtersSlice.reducer;

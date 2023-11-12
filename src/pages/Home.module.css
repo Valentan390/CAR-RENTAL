@@ -1,0 +1,11 @@
+.backgroundImg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url($../../../imeges/avtonissannissan-ransport44725.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -20;
+  position: absolute;
+}

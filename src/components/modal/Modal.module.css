@@ -28,25 +28,25 @@ body.modal-open {
   top: 0;
   left: 0;
   width: 100vw;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(18, 20, 23, 0.5);
   z-index: 1200;
 }
 .modalContainer {
   position: relative;
   width: 541px;
-  /* height: 752px; */
+  height: 688px;
   border-radius: 24px;
   background: #fff;
   padding: 40px;
 }
 .closeBtn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 16px;
+  right: 16px;
   background: transparent;
 }
 .wrapperCar {
@@ -95,8 +95,8 @@ body.modal-open {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.43;
-  margin-top: 14px;
-  margin-bottom: 24px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .secondaryTitle {
   color: var(--pr-text-color);
@@ -115,14 +115,14 @@ body.modal-open {
   list-style: none;
   font-size: 12px;
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 9px;
 }
 .conditionList {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .conditionList li {
   padding: 7px 14px;
