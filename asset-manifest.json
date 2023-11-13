@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CAR-RENTAL/static/css/main.e12c6076.css",
-    "main.js": "/CAR-RENTAL/static/js/main.f7f8933f.js",
+    "main.js": "/CAR-RENTAL/static/js/main.fa666a58.js",
     "static/media/avtonissannissan-ransport44725.jpeg": "/CAR-RENTAL/static/media/avtonissannissan-ransport44725.2a1fc7fc946a42d142fb.jpeg",
     "static/media/2023-ferrari-roma.jpg": "/CAR-RENTAL/static/media/2023-ferrari-roma.34202a8af41f779202f5.jpg",
     "static/media/2020errarif8spyder1031593551679.jpg": "/CAR-RENTAL/static/media/2020errarif8spyder1031593551679.eb2761120e5d48791a1e.jpg",
@@ -10,10 +10,10 @@
     "static/media/addHeart.svg": "/CAR-RENTAL/static/media/addHeart.623a3b874365d724c658e79a860ad4a4.svg",
     "static/media/close.svg": "/CAR-RENTAL/static/media/close.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
     "main.e12c6076.css.map": "/CAR-RENTAL/static/css/main.e12c6076.css.map",
-    "main.f7f8933f.js.map": "/CAR-RENTAL/static/js/main.f7f8933f.js.map"
+    "main.fa666a58.js.map": "/CAR-RENTAL/static/js/main.fa666a58.js.map"
   },
   "entrypoints": [
     "static/css/main.e12c6076.css",
-    "static/js/main.f7f8933f.js"
+    "static/js/main.fa666a58.js"
   ]
 }
