@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CAR-RENTAL/static/css/main.c9287885.css",
-    "main.js": "/CAR-RENTAL/static/js/main.7e62d859.js",
+    "main.js": "/CAR-RENTAL/static/js/main.ad2abeeb.js",
     "static/css/479.f8f5bbf8.chunk.css": "/CAR-RENTAL/static/css/479.f8f5bbf8.chunk.css",
     "static/js/479.b6485c51.chunk.js": "/CAR-RENTAL/static/js/479.b6485c51.chunk.js",
     "static/css/932.0b9c4213.chunk.css": "/CAR-RENTAL/static/css/932.0b9c4213.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/345.f1548ce8.chunk.js": "/CAR-RENTAL/static/js/345.f1548ce8.chunk.js",
     "static/js/551.4e780016.chunk.js": "/CAR-RENTAL/static/js/551.4e780016.chunk.js",
     "static/js/144.e00ca4b4.chunk.js": "/CAR-RENTAL/static/js/144.e00ca4b4.chunk.js",
-    "static/js/994.f7f16de9.chunk.js": "/CAR-RENTAL/static/js/994.f7f16de9.chunk.js",
+    "static/js/994.f31796c2.chunk.js": "/CAR-RENTAL/static/js/994.f31796c2.chunk.js",
     "static/media/avtonissannissan-ransport44725.jpeg": "/CAR-RENTAL/static/media/avtonissannissan-ransport44725.2a1fc7fc946a42d142fb.jpeg",
     "static/media/2023-ferrari-roma.jpg": "/CAR-RENTAL/static/media/2023-ferrari-roma.34202a8af41f779202f5.jpg",
     "static/media/2020errarif8spyder1031593551679.jpg": "/CAR-RENTAL/static/media/2020errarif8spyder1031593551679.eb2761120e5d48791a1e.jpg",
@@ -19,7 +19,7 @@
     "static/media/addHeart.svg": "/CAR-RENTAL/static/media/addHeart.623a3b874365d724c658e79a860ad4a4.svg",
     "static/media/close.svg": "/CAR-RENTAL/static/media/close.f3cbdd58dc25ca7cbb3d242106b56fb9.svg",
     "main.c9287885.css.map": "/CAR-RENTAL/static/css/main.c9287885.css.map",
-    "main.7e62d859.js.map": "/CAR-RENTAL/static/js/main.7e62d859.js.map",
+    "main.ad2abeeb.js.map": "/CAR-RENTAL/static/js/main.ad2abeeb.js.map",
     "479.f8f5bbf8.chunk.css.map": "/CAR-RENTAL/static/css/479.f8f5bbf8.chunk.css.map",
     "479.b6485c51.chunk.js.map": "/CAR-RENTAL/static/js/479.b6485c51.chunk.js.map",
     "932.0b9c4213.chunk.css.map": "/CAR-RENTAL/static/css/932.0b9c4213.chunk.css.map",
@@ -28,10 +28,10 @@
     "345.f1548ce8.chunk.js.map": "/CAR-RENTAL/static/js/345.f1548ce8.chunk.js.map",
     "551.4e780016.chunk.js.map": "/CAR-RENTAL/static/js/551.4e780016.chunk.js.map",
     "144.e00ca4b4.chunk.js.map": "/CAR-RENTAL/static/js/144.e00ca4b4.chunk.js.map",
-    "994.f7f16de9.chunk.js.map": "/CAR-RENTAL/static/js/994.f7f16de9.chunk.js.map"
+    "994.f31796c2.chunk.js.map": "/CAR-RENTAL/static/js/994.f31796c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9287885.css",
-    "static/js/main.7e62d859.js"
+    "static/js/main.ad2abeeb.js"
   ]
 }
