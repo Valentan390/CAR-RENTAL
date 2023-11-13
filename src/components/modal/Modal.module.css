@@ -70,7 +70,7 @@ body.modal-open {
 }
 .carTitle h2 {
   color: #121417;
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.33;
@@ -78,7 +78,7 @@ body.modal-open {
 }
 .carTitle span {
   color: var(--pr-button-background-color);
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.33;
@@ -92,7 +92,7 @@ body.modal-open {
 }
 .carDescription {
   color: #121417;
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
   font-size: 14px;
   line-height: 1.43;
   margin-top: 9px;
@@ -100,7 +100,7 @@ body.modal-open {
 }
 .secondaryTitle {
   color: var(--pr-text-color);
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.43;
@@ -111,7 +111,7 @@ body.modal-open {
   flex-wrap: wrap;
   gap: 6px;
   color: rgba(18, 20, 23, 0.5);
-  font-family: inherit;
+  font-family: 'Manrope', sans-serif;
   list-style: none;
   font-size: 12px;
   line-height: 1.5;
