@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectFilters } from 'redux/filters/selectorsFilters';
 import SelectPrice from 'components/select/SelectPrice';
-import { resetFilters } from 'redux/filters/filtersSlice';
+import { resetFilters, setFilters } from 'redux/filters/filtersSlice';
 
 const CarFilter = ({ onFilterChange }) => {
   const [selectedMake, setSelectedMake] = useState('');
@@ -37,7 +37,7 @@ const CarFilter = ({ onFilterChange }) => {
       maxMileage,
     };
 
-    onFilterChange(filters);
+    dispatch(setFilters(filters));
   };
 
   const clearFilters = e => {

@@ -13,9 +13,9 @@
 
 .Modal {
   width: 430px;
-  /* height: 216px; */
+
   border: 2px solid;
-  /* background-clip: initial; */
+
   background-color: bisque;
 }
 
