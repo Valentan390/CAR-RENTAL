@@ -38,7 +38,7 @@ body.modal-open {
 .modalContainer {
   position: relative;
   width: 541px;
-  height: 688px;
+  /* height: 688px; */
   border-radius: 24px;
   background: #fff;
   padding: 40px;
