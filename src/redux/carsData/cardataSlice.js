@@ -8,7 +8,7 @@ import {
 
 const initialState = {
   cars: [],
-  filterCars: [],
+  modalCar: [],
   allcars: [],
 
   isLoading: false,
@@ -42,7 +42,7 @@ const handleFetchCarsFulfilledAll = (state, action) => {
 const handleFetchCarsFilter = (state, action) => {
   state.isLoading = false;
   state.error = null;
-  state.filterCars = action.payload;
+  state.modalCar = action.payload;
 };
 
 export const carsSlice = createSlice({

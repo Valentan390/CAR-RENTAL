@@ -2,7 +2,7 @@ import { createSelector } from '@reduxjs/toolkit';
 
 export const selectCars = state => state.cars.cars;
 export const selectAllCars = state => state.cars.allcars;
-export const selectCarsModal = state => state.cars.filterCars;
+export const selectCarsModal = state => state.cars.modalCar;
 export const selectCarsFilter = state => state.filters.filters;
 export const selectIsLoading = state => state.cars.isLoading;
 
