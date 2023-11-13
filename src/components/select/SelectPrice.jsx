@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 
-const options = [{ value: '', label: 'To $' }];
+const options = [];
 
 for (let price = 10; price <= 200; price += 10) {
   options.push({ value: price, label: `${price}$` });
@@ -48,6 +48,13 @@ const SelectPrice = ({ selectedPrice, setSelectedPrice }) => {
         color: '#121417',
         backgroundColor: 'transparent',
       },
+    }),
+
+    dropdownIndicator: (provided, state) => ({
+      ...provided,
+      transform: state.selectProps.menuIsOpen
+        ? 'rotate(180deg)'
+        : 'rotate(0deg)',
     }),
     menu: provided => ({
       ...provided,

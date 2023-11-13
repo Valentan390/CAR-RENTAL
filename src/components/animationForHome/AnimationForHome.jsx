@@ -10,7 +10,7 @@ const AnimationForHome = () => {
     <div className={styles.title}>
       <MovingComponent
         type={AnimationsForChaining}
-        duration="1000ms"
+        duration="3388ms"
         timing="linear"
         fillMode="forwards"
         iteration={1}

@@ -7,12 +7,6 @@ import {
   resetFiltersFavorite,
   setFiltersFavorite,
 } from 'redux/filters/filtersSlice';
-import {
-  InputDiv,
-  InputPl,
-  InputLeft,
-  InputRight,
-} from '../carFilter/CarFilter.styled';
 import SelectBrandFavorits from 'components/select/SelectBrandFavorits';
 
 const CarFilterFavorits = () => {
@@ -78,9 +72,10 @@ const CarFilterFavorits = () => {
           <label className={styles.label_title}>Car mealege / km</label>
 
           <div>
-            <InputDiv>
-              <InputPl>From</InputPl>
-              <InputLeft
+            <div className={styles.input_wrapper}>
+              <label className={styles.InputPl}>From</label>
+              <input
+                className={styles.left_input}
                 type="number"
                 value={minMileage}
                 onChange={e => {
@@ -90,10 +85,11 @@ const CarFilterFavorits = () => {
                   }
                 }}
               />
-            </InputDiv>
-            <InputDiv>
-              <InputPl>To</InputPl>
-              <InputRight
+            </div>
+            <div className={styles.input_wrapper}>
+              <label className={styles.InputPl}>To</label>
+              <input
+                className={styles.rigth_input}
                 type="number"
                 value={maxMileage}
                 onChange={e => {
@@ -103,7 +99,7 @@ const CarFilterFavorits = () => {
                   }
                 }}
               />
-            </InputDiv>
+            </div>
           </div>
         </div>
         <button

@@ -5,12 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectFilters } from 'redux/filters/selectorsFilters';
 import SelectPrice from 'components/select/SelectPrice';
 import { resetFilters } from 'redux/filters/filtersSlice';
-import {
-  InputDiv,
-  InputPl,
-  InputLeft,
-  InputRight,
-} from '../carFilter/CarFilter.styled';
 
 const CarFilter = ({ onFilterChange }) => {
   const [selectedMake, setSelectedMake] = useState('');
@@ -62,7 +56,6 @@ const CarFilter = ({ onFilterChange }) => {
           <SelectBrand
             selectedMake={selectedMake}
             setSelectedMake={setSelectedMake}
-            // makes={makes}
           />
         </div>
         <div className={styles.select_wrapper}>
@@ -76,9 +69,10 @@ const CarFilter = ({ onFilterChange }) => {
           <label className={styles.label_title}>Car mealege / km</label>
 
           <div>
-            <InputDiv>
-              <InputPl>From</InputPl>
-              <InputLeft
+            <div className={styles.input_wrapper}>
+              <label className={styles.InputPl}>From</label>
+              <input
+                className={styles.left_input}
                 type="number"
                 value={minMileage}
                 onChange={e => {
@@ -88,10 +82,11 @@ const CarFilter = ({ onFilterChange }) => {
                   }
                 }}
               />
-            </InputDiv>
-            <InputDiv>
-              <InputPl>To</InputPl>
-              <InputRight
+            </div>
+            <div className={styles.input_wrapper}>
+              <label className={styles.InputPl}>To</label>
+              <input
+                className={styles.rigth_input}
                 type="number"
                 value={maxMileage}
                 onChange={e => {
@@ -101,7 +96,7 @@ const CarFilter = ({ onFilterChange }) => {
                   }
                 }}
               />
-            </InputDiv>
+            </div>
           </div>
         </div>
         <button

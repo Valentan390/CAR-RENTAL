@@ -3,13 +3,10 @@ import Select from 'react-select';
 import brands from '../../CarBrands/carbrands.json';
 
 const SelectBrand = ({ selectedMake, setSelectedMake }) => {
-  const options = [
-    { value: '', label: 'Enter the text' },
-    ...brands.map(brand => ({
-      value: brand,
-      label: brand,
-    })),
-  ];
+  const options = brands.map(brand => ({
+    value: brand,
+    label: brand,
+  }));
 
   const handleChange = selectedOption => {
     setSelectedMake(selectedOption ? selectedOption.value : '');
@@ -60,6 +57,13 @@ const SelectBrand = ({ selectedMake, setSelectedMake }) => {
       border: '1px solid rgba(18, 20, 23, 0.05)',
       background: '#FFFFFF',
       boxShadow: '0px 4px 36px 0px rgba(0, 0, 0, 0.02)',
+    }),
+
+    dropdownIndicator: (provided, state) => ({
+      ...provided,
+      transform: state.selectProps.menuIsOpen
+        ? 'rotate(180deg)'
+        : 'rotate(0deg)',
     }),
     menuList: provided => ({
       ...provided,

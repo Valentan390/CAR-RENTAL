@@ -1,31 +1,52 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import { Container, Header, Logo, Link, Icon } from './Layout.styled';
+import styles from './Layout.module.css';
+import { NavLink, Outlet } from 'react-router-dom';
+
+let activeClassName = {
+  color: 'white',
+  backgroundColor: 'orangered',
+  borderRadius: '12px',
+};
 
 const Layout = () => {
   return (
-    <Container>
-      <Header>
-        <Logo>
-          <Icon
-            role="img"
-            aria-label="computer icon"
-            style={{ width: '480px' }}
-          >
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <p className={styles.logo}>
+          <span className={styles.icon} role="img" aria-label="computer icon">
             🚗🚘🚙
-          </Icon>{' '}
-          CAR-RENTAL
-        </Logo>
+          </span>{' '}
+          CAR-RENTAL SERVIS{' '}
+          <span className={styles.icon} role="img" aria-label="computer icon">
+            🚗🚘🚙
+          </span>{' '}
+        </p>
         <nav>
-          <Link to="/" end>
+          <NavLink
+            className={styles.link}
+            to="/"
+            style={({ isActive }) => (isActive ? activeClassName : undefined)}
+          >
             Home
-          </Link>
-          <Link to="/catalog">Catalog</Link>
-          <Link to="/favourites">Favourites</Link>
+          </NavLink>
+          <NavLink
+            className={styles.link}
+            to="/catalog"
+            style={({ isActive }) => (isActive ? activeClassName : undefined)}
+          >
+            Catalog
+          </NavLink>
+          <NavLink
+            className={styles.link}
+            to="/favourites"
+            style={({ isActive }) => (isActive ? activeClassName : undefined)}
+          >
+            Favourites
+          </NavLink>
         </nav>
-      </Header>
+      </header>
       <Outlet />
-    </Container>
+    </div>
   );
 };
 

@@ -1,13 +1,10 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-
-export const Container = styled.div`
+.container {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 16px;
-`;
+}
 
-export const Header = styled.header`
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,31 +13,35 @@ export const Header = styled.header`
   margin-bottom: 16px;
   border-bottom: 1px solid black;
   background: var(--pr-button-background-color);
+  border-radius: 12px;
 
   > nav {
     display: flex;
   }
-`;
+}
 
-export const Logo = styled.p`
+.logo {
   font-weight: 700;
   margin: 0;
-  //   height: 50px;
-`;
+  /* height: 50px; */
+  font-size: 23px;
+}
 
-export const Link = styled(NavLink)`
+.link {
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-size: 23px;
 
-  &.active {
+  /* &.active {
     color: white;
     background-color: orangered;
-  }
-`;
+    border-radius: 12px;
+  } */
+}
 
-export const Icon = styled.span`
+.icon {
   width: 80px;
-`;
+}
