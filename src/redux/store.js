@@ -14,9 +14,6 @@ import { carsReducer } from './carsData/cardataSlice';
 import favoriteReducer from './favorite/favoriteSlice';
 import filtersReducer from './filters/filtersSlice';
 
-// import { favoriteReducer } from './favorite/favoriteSlice';
-// import { filterReducer } from './filter/filterSlice';
-
 const favoritePersistConfig = {
   key: 'favorites',
   storage,
@@ -33,8 +30,6 @@ export const store = configureStore({
     cars: carsReducer,
     favorite: persistedUserReducer,
     filters: filtersReducer,
-    // filter: filterReducer,
-    // favorites: favoriteReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
@@ -45,12 +40,3 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
-
-// import { configureStore } from '@reduxjs/toolkit';
-// import { carsReducer } from './carsData/cardataSlice';
-
-// export const store = configureStore({
-//   reducer: {
-//     cars: carsReducer,
-//   },
-// });
